@@ -1,0 +1,54 @@
+/* LogRegister.css */
+
+.log-register-form {
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 15px 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 500px; /* Limit the maximum width of the form */
+  }
+  
+  .log-register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .log-register-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .log-register-form input[type="text"],
+  .log-register-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  .log-register-form button {
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .success-notification {
+    color: #28a745; /* Green color for success notification */
+    background-color: #f0f8ef;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  

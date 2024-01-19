@@ -1,0 +1,25 @@
+.mainhome {
+    /* background-color: #F8F4EC; */
+    display: flex;
+    flex-wrap: wrap;
+  }
+   
+  .leftside {
+    border-radius: 10px; 
+    float: left;
+    width: 30%;
+  }
+  
+  .rightside { 
+    display: block;
+    float: right; 
+    width: 70%;
+  }
+  
+  @media (max-width: 768px) {
+    .leftside,
+    .rightside {
+      flex: 1 0 100%;
+    }
+  }
+  

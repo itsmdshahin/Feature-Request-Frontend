@@ -1,0 +1,63 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+}
+
+.headermaincontainer {
+  background-color: #402B3A;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightHeader {
+  display: flex;
+  align-items: center;
+}
+
+.profileLinks {
+  margin-left: auto; /* Pushes the profile links to the right */
+}
+
+.profileLinks a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.divider {
+  color: #fff;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Responsive styles for mobile devices */
+@media only screen and (max-width: 600px) {
+  .headermaincontainer {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .rightHeader {
+    margin-bottom: 10px;
+  }
+  
+  .profileLinks {
+    margin-left: 0;
+  }
+}
+
+.fotter{
+  padding: 10px;
+  background: #402B3A;
+  text-align: center;
+  margin-top: 30px;
+}
