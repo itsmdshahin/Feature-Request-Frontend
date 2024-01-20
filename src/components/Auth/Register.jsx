@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../../style/LogRegister.css'; // Import the new CSS file
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
 
+  const navigate = useNavigate();
   const apiURL = `https://feature-request-backend.onrender.com`||'http://localhost:8000';
   const handleRegister = () => { 
     
@@ -24,6 +26,9 @@ const Register = () => {
         // Handle successful registration
         console.log('Registration successful', response.data);
         setMessage('Registration successful! You can now log in.');
+        navigate(`/login`);
+
+        
       })
       .catch(error => {
         // Handle registration error

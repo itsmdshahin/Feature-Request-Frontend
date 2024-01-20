@@ -21,7 +21,7 @@ const Routes = () => {
     // },
     {
       path: '/',
-      element: <Home />,
+      element: isLoggedIn ? <Home /> : <Login /> ,
     },
     {
       path: '/profile/:id',  
@@ -33,7 +33,7 @@ const Routes = () => {
     },
     {
       path: '/register',
-      element: isLoggedIn ? <Login /> : <Register />,
+      element: isLoggedIn ? <Home /> : <Register />,
     },
     {
       path: '/create-feature-request',
